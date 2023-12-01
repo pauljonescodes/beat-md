@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="WEt17V" name="BeatMD" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginFormats="buildAAX,buildAU,buildStandalone,buildVST3" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              pluginManufacturer="supertonalcompany" pluginAAXCategory="2048">
+  <MAINGROUP id="omCkoy" name="BeatMD">
+    <GROUP id="{74573123-187A-ECAB-87AE-2511EF2E8098}" name="Assets">
+      <FILE id="VtOPD6" name="BD_01.wav" compile="0" resource="1" file="Assets/BD_01.wav"/>
+      <FILE id="xvBE6Y" name="CCY_01.wav" compile="0" resource="1" file="Assets/CCY_01.wav"/>
+      <FILE id="Ua5Yr8" name="CH_01.wav" compile="0" resource="1" file="Assets/CH_01.wav"/>
+      <FILE id="VO1GDP" name="DR-220A.jpg" compile="0" resource="1" file="Assets/DR-220A.jpg"/>
+      <FILE id="ZoJdjO" name="HCP_01.wav" compile="0" resource="1" file="Assets/HCP_01.wav"/>
+      <FILE id="cJVPMS" name="HT_01.wav" compile="0" resource="1" file="Assets/HT_01.wav"/>
+      <FILE id="r7W5wM" name="LT_01.wav" compile="0" resource="1" file="Assets/LT_01.wav"/>
+      <FILE id="dLtxtG" name="MT_01.wav" compile="0" resource="1" file="Assets/MT_01.wav"/>
+      <FILE id="EGemQe" name="OH_01.wav" compile="0" resource="1" file="Assets/OH_01.wav"/>
+      <FILE id="pA6c5t" name="RCY_01.wav" compile="0" resource="1" file="Assets/RCY_01.wav"/>
+      <FILE id="fgtUYV" name="RIM_01.wav" compile="0" resource="1" file="Assets/RIM_01.wav"/>
+      <FILE id="NmFYQd" name="SD_01.wav" compile="0" resource="1" file="Assets/SD_01.wav"/>
+    </GROUP>
+    <GROUP id="{B51C78D6-A5C7-EFF2-D950-D20B03536EB7}" name="Source">
+      <FILE id="uA5BTM" name="Constants.h" compile="0" resource="0" file="Source/Constants.h"/>
+      <FILE id="Es0xpH" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="baHtWE" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="n7fmQE" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="wrCFAH" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="BeatMD"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="BeatMD"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+      </MODULEPATHS>
+    </VS2022>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="BeatMD"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="BeatMD"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
