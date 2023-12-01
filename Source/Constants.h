@@ -19,7 +19,7 @@ namespace constants
 
 	static const std::map<int, std::string> midiToSampleMap = {
 		{AcousticSnare, "SD_01_wav"},
-        {SideStick, "RIM_01_wav"},
+		{SideStick, "RIM_01_wav"},
 		{BassDrum1, "BD_01_wav"},
 		{CrashCymbal1, "CCY_01_wav"},
 		{ClosedHiHat, "CH_01_wav"},
